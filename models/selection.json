@@ -1,0 +1,519 @@
+{
+  "selected_on": "validation only",
+  "selection_metric": "pooled binary Dice",
+  "validation_images": 726,
+  "checkpoint_dataset_digest": "ba0ca2f7a8457ef8a0a370797197a7ddb934eb347a1aef542f5c803dce36e9da",
+  "checkpoint_epoch": "unknown; epoch is not stored in checkpoint",
+  "classical_threshold": 0.65,
+  "cnn_foreground_threshold": 0.75,
+  "hybrid_foreground_threshold": 0.75,
+  "hybrid_cnn_weight": 1.0,
+  "hybrid_classical_weight": 0.0,
+  "threshold_tie_break": "higher threshold",
+  "hybrid_weight_tie_break": "lower CNN weight",
+  "cnn_validation_scores": {
+    "binary": {
+      "dice": 0.3428,
+      "iou": 0.2068,
+      "precision": 0.2147,
+      "recall": 0.8498,
+      "ground_truth_pixels": 3529537,
+      "predicted_pixels": 13971232
+    },
+    "per_label": {
+      "label_1": {
+        "dice": 0.2043,
+        "iou": 0.1138,
+        "precision": 0.1158,
+        "recall": 0.8653,
+        "ground_truth_pixels": 627124,
+        "predicted_pixels": 4684688
+      },
+      "label_2": {
+        "dice": 0.0,
+        "iou": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "ground_truth_pixels": 2137704,
+        "predicted_pixels": 0
+      },
+      "label_3": {
+        "dice": 0.1046,
+        "iou": 0.0552,
+        "precision": 0.0566,
+        "recall": 0.6874,
+        "ground_truth_pixels": 764709,
+        "predicted_pixels": 9286544
+      }
+    }
+  },
+  "hybrid_validation_scores": {
+    "binary": {
+      "dice": 0.3428,
+      "iou": 0.2068,
+      "precision": 0.2147,
+      "recall": 0.8498,
+      "ground_truth_pixels": 3529537,
+      "predicted_pixels": 13971232
+    },
+    "per_label": {
+      "label_1": {
+        "dice": 0.2043,
+        "iou": 0.1138,
+        "precision": 0.1158,
+        "recall": 0.8653,
+        "ground_truth_pixels": 627124,
+        "predicted_pixels": 4684688
+      },
+      "label_2": {
+        "dice": 0.0,
+        "iou": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "ground_truth_pixels": 2137704,
+        "predicted_pixels": 0
+      },
+      "label_3": {
+        "dice": 0.1046,
+        "iou": 0.0552,
+        "precision": 0.0566,
+        "recall": 0.6874,
+        "ground_truth_pixels": 764709,
+        "predicted_pixels": 9286544
+      }
+    }
+  },
+  "cnn_threshold_sweep": [
+    {
+      "threshold": 0.1,
+      "scores": {
+        "dice": 0.2168,
+        "iou": 0.1216,
+        "precision": 0.1216,
+        "recall": 0.9999,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 29031231
+      }
+    },
+    {
+      "threshold": 0.15,
+      "scores": {
+        "dice": 0.2168,
+        "iou": 0.1216,
+        "precision": 0.1216,
+        "recall": 0.9999,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 29031121
+      }
+    },
+    {
+      "threshold": 0.2,
+      "scores": {
+        "dice": 0.2168,
+        "iou": 0.1216,
+        "precision": 0.1216,
+        "recall": 0.9998,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 29029953
+      }
+    },
+    {
+      "threshold": 0.25,
+      "scores": {
+        "dice": 0.2168,
+        "iou": 0.1216,
+        "precision": 0.1216,
+        "recall": 0.9998,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 29023734
+      }
+    },
+    {
+      "threshold": 0.3,
+      "scores": {
+        "dice": 0.2238,
+        "iou": 0.126,
+        "precision": 0.126,
+        "recall": 0.9995,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 27999054
+      }
+    },
+    {
+      "threshold": 0.35,
+      "scores": {
+        "dice": 0.2442,
+        "iou": 0.1391,
+        "precision": 0.1391,
+        "recall": 0.9976,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 25307761
+      }
+    },
+    {
+      "threshold": 0.4,
+      "scores": {
+        "dice": 0.2574,
+        "iou": 0.1477,
+        "precision": 0.1478,
+        "recall": 0.9965,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 23801938
+      }
+    },
+    {
+      "threshold": 0.45,
+      "scores": {
+        "dice": 0.2755,
+        "iou": 0.1597,
+        "precision": 0.1599,
+        "recall": 0.9936,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 21930949
+      }
+    },
+    {
+      "threshold": 0.5,
+      "scores": {
+        "dice": 0.2918,
+        "iou": 0.1708,
+        "precision": 0.1712,
+        "recall": 0.9876,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 20363377
+      }
+    },
+    {
+      "threshold": 0.55,
+      "scores": {
+        "dice": 0.3034,
+        "iou": 0.1788,
+        "precision": 0.1795,
+        "recall": 0.9793,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 19257265
+      }
+    },
+    {
+      "threshold": 0.6,
+      "scores": {
+        "dice": 0.3149,
+        "iou": 0.1869,
+        "precision": 0.188,
+        "recall": 0.97,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 18213444
+      }
+    },
+    {
+      "threshold": 0.65,
+      "scores": {
+        "dice": 0.3264,
+        "iou": 0.195,
+        "precision": 0.1968,
+        "recall": 0.9563,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 17151184
+      }
+    },
+    {
+      "threshold": 0.7,
+      "scores": {
+        "dice": 0.3388,
+        "iou": 0.204,
+        "precision": 0.207,
+        "recall": 0.9332,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 15914224
+      }
+    },
+    {
+      "threshold": 0.75,
+      "scores": {
+        "dice": 0.3428,
+        "iou": 0.2068,
+        "precision": 0.2147,
+        "recall": 0.8498,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 13971232
+      }
+    },
+    {
+      "threshold": 0.8,
+      "scores": {
+        "dice": 0.2885,
+        "iou": 0.1686,
+        "precision": 0.1923,
+        "recall": 0.5774,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 10596973
+      }
+    },
+    {
+      "threshold": 0.85,
+      "scores": {
+        "dice": 0.2218,
+        "iou": 0.1247,
+        "precision": 0.1635,
+        "recall": 0.3447,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 7442092
+      }
+    },
+    {
+      "threshold": 0.9,
+      "scores": {
+        "dice": 0.2064,
+        "iou": 0.1151,
+        "precision": 0.1808,
+        "recall": 0.2404,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 4691745
+      }
+    },
+    {
+      "threshold": 0.95,
+      "scores": {
+        "dice": 0.1897,
+        "iou": 0.1048,
+        "precision": 0.2819,
+        "recall": 0.143,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 1790103
+      }
+    }
+  ],
+  "hybrid_weight_sweep": [
+    {
+      "weight": 0.0,
+      "scores": {
+        "dice": 0.1158,
+        "iou": 0.0614,
+        "precision": 0.3667,
+        "recall": 0.0687,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 661581
+      }
+    },
+    {
+      "weight": 0.05,
+      "scores": {
+        "dice": 0.1173,
+        "iou": 0.0623,
+        "precision": 0.367,
+        "recall": 0.0698,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 671107
+      }
+    },
+    {
+      "weight": 0.1,
+      "scores": {
+        "dice": 0.1197,
+        "iou": 0.0637,
+        "precision": 0.3655,
+        "recall": 0.0716,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 691097
+      }
+    },
+    {
+      "weight": 0.15,
+      "scores": {
+        "dice": 0.1222,
+        "iou": 0.0651,
+        "precision": 0.3627,
+        "recall": 0.0735,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 715215
+      }
+    },
+    {
+      "weight": 0.2,
+      "scores": {
+        "dice": 0.1255,
+        "iou": 0.067,
+        "precision": 0.3595,
+        "recall": 0.076,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 746439
+      }
+    },
+    {
+      "weight": 0.25,
+      "scores": {
+        "dice": 0.1288,
+        "iou": 0.0688,
+        "precision": 0.354,
+        "recall": 0.0787,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 784824
+      }
+    },
+    {
+      "weight": 0.3,
+      "scores": {
+        "dice": 0.1325,
+        "iou": 0.071,
+        "precision": 0.347,
+        "recall": 0.0819,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 833018
+      }
+    },
+    {
+      "weight": 0.35,
+      "scores": {
+        "dice": 0.1369,
+        "iou": 0.0735,
+        "precision": 0.3386,
+        "recall": 0.0858,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 894228
+      }
+    },
+    {
+      "weight": 0.4,
+      "scores": {
+        "dice": 0.1421,
+        "iou": 0.0765,
+        "precision": 0.3285,
+        "recall": 0.0906,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 973746
+      }
+    },
+    {
+      "weight": 0.45,
+      "scores": {
+        "dice": 0.1479,
+        "iou": 0.0798,
+        "precision": 0.3157,
+        "recall": 0.0966,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 1079700
+      }
+    },
+    {
+      "weight": 0.5,
+      "scores": {
+        "dice": 0.1545,
+        "iou": 0.0837,
+        "precision": 0.3002,
+        "recall": 0.104,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 1222440
+      }
+    },
+    {
+      "weight": 0.55,
+      "scores": {
+        "dice": 0.1624,
+        "iou": 0.0884,
+        "precision": 0.2824,
+        "recall": 0.1139,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 1423929
+      }
+    },
+    {
+      "weight": 0.6,
+      "scores": {
+        "dice": 0.1718,
+        "iou": 0.094,
+        "precision": 0.2619,
+        "recall": 0.1279,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 1723207
+      }
+    },
+    {
+      "weight": 0.65,
+      "scores": {
+        "dice": 0.1837,
+        "iou": 0.1011,
+        "precision": 0.2406,
+        "recall": 0.1485,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 2179200
+      }
+    },
+    {
+      "weight": 0.7,
+      "scores": {
+        "dice": 0.2007,
+        "iou": 0.1116,
+        "precision": 0.2224,
+        "recall": 0.1829,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 2902665
+      }
+    },
+    {
+      "weight": 0.75,
+      "scores": {
+        "dice": 0.225,
+        "iou": 0.1267,
+        "precision": 0.2078,
+        "recall": 0.2452,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 4164128
+      }
+    },
+    {
+      "weight": 0.8,
+      "scores": {
+        "dice": 0.2313,
+        "iou": 0.1308,
+        "precision": 0.1812,
+        "recall": 0.3199,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 6229954
+      }
+    },
+    {
+      "weight": 0.85,
+      "scores": {
+        "dice": 0.2375,
+        "iou": 0.1348,
+        "precision": 0.1694,
+        "recall": 0.3972,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 8273979
+      }
+    },
+    {
+      "weight": 0.9,
+      "scores": {
+        "dice": 0.2725,
+        "iou": 0.1577,
+        "precision": 0.183,
+        "recall": 0.5332,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 10282355
+      }
+    },
+    {
+      "weight": 0.95,
+      "scores": {
+        "dice": 0.3196,
+        "iou": 0.1902,
+        "precision": 0.2056,
+        "recall": 0.7175,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 12320719
+      }
+    },
+    {
+      "weight": 1.0,
+      "scores": {
+        "dice": 0.3428,
+        "iou": 0.2068,
+        "precision": 0.2147,
+        "recall": 0.8498,
+        "ground_truth_pixels": 3529537,
+        "predicted_pixels": 13971232
+      }
+    }
+  ]
+}

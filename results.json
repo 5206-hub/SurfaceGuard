@@ -1,0 +1,120 @@
+{
+  "split": "official test",
+  "images": 840,
+  "evaluation_scope": "All 840 official test images. Settings were selected on validation before test evaluation.",
+  "previous_test_subset": {
+    "images": 150,
+    "already_inspected": true,
+    "note": "This subset was inspected in the earlier project run; it was not used to select the settings above.",
+    "metrics": {
+      "classical_binary": {
+        "dice": 0.2429,
+        "iou": 0.1382,
+        "precision": 0.4095,
+        "recall": 0.1726,
+        "ground_truth_pixels": 463335,
+        "predicted_pixels": 195314
+      },
+      "cnn_binary": {
+        "dice": 0.2907,
+        "iou": 0.1701,
+        "precision": 0.1707,
+        "recall": 0.9787,
+        "ground_truth_pixels": 463335,
+        "predicted_pixels": 2656092
+      },
+      "hybrid_binary": {
+        "dice": 0.3826,
+        "iou": 0.2366,
+        "precision": 0.2416,
+        "recall": 0.9191,
+        "ground_truth_pixels": 463335,
+        "predicted_pixels": 1762518
+      }
+    }
+  },
+  "selected_settings": {
+    "cnn_foreground_threshold": 0.75,
+    "hybrid_foreground_threshold": 0.75,
+    "hybrid_cnn_weight": 1.0,
+    "hybrid_classical_weight": 0.0,
+    "classical_threshold": 0.65
+  },
+  "classical_binary": {
+    "dice": 0.151,
+    "iou": 0.0817,
+    "precision": 0.3142,
+    "recall": 0.0994,
+    "ground_truth_pixels": 4181585,
+    "predicted_pixels": 1323177
+  },
+  "cnn_binary": {
+    "dice": 0.3367,
+    "iou": 0.2025,
+    "precision": 0.207,
+    "recall": 0.9025,
+    "ground_truth_pixels": 4181585,
+    "predicted_pixels": 18234093
+  },
+  "hybrid_binary": {
+    "dice": 0.3367,
+    "iou": 0.2025,
+    "precision": 0.207,
+    "recall": 0.9025,
+    "ground_truth_pixels": 4181585,
+    "predicted_pixels": 18234093
+  },
+  "classical_per_label": "Not applicable: classical output is unclassified binary foreground.",
+  "cnn_per_label": {
+    "label_1": {
+      "dice": 0.1944,
+      "iou": 0.1076,
+      "precision": 0.1092,
+      "recall": 0.8804,
+      "ground_truth_pixels": 837548,
+      "predicted_pixels": 6750456
+    },
+    "label_2": {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": null,
+      "recall": 0.0,
+      "ground_truth_pixels": 2411879,
+      "predicted_pixels": 0
+    },
+    "label_3": {
+      "dice": 0.1153,
+      "iou": 0.0612,
+      "precision": 0.0623,
+      "recall": 0.7677,
+      "ground_truth_pixels": 932158,
+      "predicted_pixels": 11483637
+    }
+  },
+  "hybrid_per_label": {
+    "label_1": {
+      "dice": 0.1944,
+      "iou": 0.1076,
+      "precision": 0.1092,
+      "recall": 0.8804,
+      "ground_truth_pixels": 837548,
+      "predicted_pixels": 6750456
+    },
+    "label_2": {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": null,
+      "recall": 0.0,
+      "ground_truth_pixels": 2411879,
+      "predicted_pixels": 0
+    },
+    "label_3": {
+      "dice": 0.1153,
+      "iou": 0.0612,
+      "precision": 0.0623,
+      "recall": 0.7677,
+      "ground_truth_pixels": 932158,
+      "predicted_pixels": 11483637
+    }
+  }
+}

@@ -1,0 +1,48 @@
+# Local Python environments, caches, and test output
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Prepared/raw datasets are intentionally not distributed with this repository
+data/
+dataset_raw/
+
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editor and local-agent state
+.vscode/
+.idea/
+.claude/
+.agents/
+.codex/
+
+# Generated logs and incomplete Phase 1 experiment artifacts
+*.log
+models/phase1/
+
+# Publish only the checkpoints and selection settings the application supports.
+models/*
+!models/best.pt
+!models/best_perclass.pt
+!models/selection.json
+!models/best_perclass_selection.json
+
+# Operating-system temporary files
+.DS_Store
+Thumbs.db
